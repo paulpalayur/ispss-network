@@ -1,0 +1,45 @@
+Privilege Cloud Requirements
+=============================
+vault-<Subdomain>.privilegecloud.cyberark.cloud:1858
+<tenant-id>.id.cyberark.cloud:443
+connector-<Subdomain>.privilegecloud.cyberark.cloud:443
+console.privilegecloud.cyberark.cloud:443
+<Subdomain>.cyberark.cloud:443
+<Subdomain>.privilegecloud.cyberark.cloud:443
+webaccess-<Subdomain>.privilegecloud.cyberark.cloud:443
+<Subdomain>.connectormanagement.cyberark.cloud:443
+
+Connector Managment Based on <AWSRegion>
+=========================================
+connector-management-scripts-490081306957-<AWSRegion>.s3.amazonaws.com:443
+connector-management-assets-490081306957-<AWSRegion>.s3.amazonaws.com:443
+a3vvqcp8z371p3-ats.iot.<AWSRegion>.amazonaws.com:443
+component-registry-store-490081306957.s3.amazonaws.com:443
+
+AWS SSL
+========
+crt.r2m02.amazontrust.com:80
+ocsp.r2m02.amazontrust.com:80
+
+Identity Connector
+===================
+This is based on the identity tenant pod being 1306.
+
+<IdentityPod>-b1.relay.idaptive.app:443
+<IdentityPod>-b2.relay.idaptive.app:443
+<IdentityPod>-a1.relay.idaptive.app:443
+<IdentityPod>-a2.relay.idaptive.app:443
+pod0.idaptive.app:443
+edge.idaptive.app:443
+privacy-policy.truste.com:80
+ocsp.verisign.com:80
+ocsp.globalsign.com:80
+crl.globalsign.com:80
+secure.globalsign.com:80
+
+Optional Rules
+===============
+The following rules are optional, they are used to gather the public egress IP and to update the Connector Management Pre-Requisites Script.
+
+ipinfo.io:80
+raw.githubusercontent.com:443
