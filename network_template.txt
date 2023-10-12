@@ -10,7 +10,7 @@ webaccess-<Subdomain>.privilegecloud.cyberark.cloud:443
 <Subdomain>.connectormanagement.cyberark.cloud:443
 
 Connector Managment Based on <AWSRegion>
-=========================================
+=============================================
 connector-management-scripts-490081306957-<AWSRegion>.s3.amazonaws.com:443
 connector-management-assets-490081306957-<AWSRegion>.s3.amazonaws.com:443
 a3vvqcp8z371p3-ats.iot.<AWSRegion>.amazonaws.com:443
@@ -23,7 +23,7 @@ ocsp.r2m02.amazontrust.com:80
 
 Identity Connector
 ===================
-This is based on the identity tenant pod being 1306.
+This is based on the identity tenant pod being <IdentityPod>.
 
 <IdentityPod>-b1.relay.idaptive.app:443
 <IdentityPod>-b2.relay.idaptive.app:443
