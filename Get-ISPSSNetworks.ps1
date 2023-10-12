@@ -106,5 +106,4 @@ Write-Output "AWS region is $($AWSRegion)"
 $IdentitySysinfo = Invoke-WebRequest "https://$($identityTenantUrl)/sysinfo/version"
 $Identitypod = ($IdentitySysinfo.Content|ConvertFrom-Json).Result.Name.Split(".")[0]
 Set-Template -template "$PSScriptRoot\network_template.txt" -placeholders @("<Subdomain>","<tenant-id>","<AWSRegion>","<IdentityPod>") -placeholderValues @($subdomain,$identityTenantId,$AWSRegion,$Identitypod) -outputFilePath "$PSScriptRoot\network_requirements.txt"
-
-
+Start-Process "$PSScriptRoot\network_requirements.txt"
